@@ -78,6 +78,8 @@ form {
 }
 
 label {
+    font-weight: bolder;
+    font-size: 1.1em;
     margin-top: 20px;
     font-weight: bolder;
     color: #333; 
@@ -90,13 +92,15 @@ label {
 input {
     padding: 5px;
     margin-top: 20px;
-    color: #333; 
+    color: #6f7779; 
     background-color: #fff;
     border: 1px solid #91ceff;
     border-radius: 5px; 
     padding: 8px 12px;
     box-shadow: 0 1px 2px rgba(153, 223, 255, 0.89); 
     transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    font-weight: bolder;
+   
 }
 
 input:focus {
@@ -145,10 +149,12 @@ input:focus {
     width: 250px;
     color: #0a7c80;
     font-weight: bold;
-    height: 300px;
+    /* Eliminar height y ajustar min-height */
+    min-height: 300px;
     position: relative;
     box-shadow: 0 4px 8px rgba(122, 92, 231, 0.918);
 }
+
 
 .producto-card img {
     width: 130px;
@@ -288,8 +294,9 @@ input:focus {
     margin: 5% auto;
     padding: 15px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     border-radius: 20px;
+    font-size: 25px;
 }
 
 #closeModal {
@@ -306,6 +313,7 @@ input:focus {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 
 .nombre-centrado {
