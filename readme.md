@@ -99,7 +99,7 @@ Funciones aplicadas al proyecto:
 # GIF DE WEBSITE
 
 - **`REGISTRAR PRODUCTOS`**
-![img](https://i.ibb.co/BqG3Zm8/Mi-V-deo-1-1-online-video-cutter-com.gif)
+![img](https://i.ibb.co/BqG3Zm8/registe.gif)
 
 
 - **`EDITAR Y ELIMINAR PRODUCTOS`**
