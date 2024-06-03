@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#registro, #lista {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#registro h2, #lista h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#productos-registrados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+    position: relative;
+}
+
+.producto-card img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.eliminar {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contar {
+    padding: 10px 20px;
+    background-color: #001F54;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#conteo {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: white;
+    border: 2px solid #00B2E3;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Ensure the height matches the button */
+}
+
+/* Ejemplo de clase highlight para toggle */
+.highlight {
+    background-color: yellow;
+    color: red;
+}

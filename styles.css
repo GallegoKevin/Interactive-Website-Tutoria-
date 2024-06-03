@@ -1,0 +1,470 @@
+/* Estilos generales */
+@font-face {
+    font-family: 'DS-Digital'; 
+    src: url('./Fonts/DS-DIGI.TTF'); 
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos del cuerpo */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('https://img2.wallspic.com/crops/9/6/3/7369/7369-light-outer_space-energy-aurora-2560x1600.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    background-attachment: fixed;
+}
+
+/* Estilos del formulario */
+#registro {
+    border: 1px solid #00a323;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 880px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+
+/* Estilos de la lista de productos */
+#lista {
+    border: 1px solid #661eda;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 880px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los títulos */
+#registro h2 {
+    text-align: center; 
+    font-size: 2em;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(to right, #4ca1af, #c4e0e5);
+    padding: 10px 20px; 
+    border-radius: 10px;
+}
+
+#lista h2 {
+    text-align: center; 
+    font-size: 2em;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    padding: 10px 20px; 
+    border-radius: 10px;
+}
+
+/* Estilos para los campos del formulario */
+form {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+label {
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #333; 
+    background-color: #f8f8f8; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(200, 255, 241, 0.932);
+}
+
+input {
+    padding: 5px;
+    margin-top: 20px;
+    color: #333; 
+    background-color: #fff;
+    border: 1px solid #91ceff;
+    border-radius: 5px; 
+    padding: 8px 12px;
+    box-shadow: 0 1px 2px rgba(153, 223, 255, 0.89); 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input:focus {
+    border-color: #4b65d9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    outline: none; 
+}
+
+/* Estilos para el botón de registrar */
+#registrar {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: bolder;
+    background: linear-gradient(to right, #283048, #859398);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    border: none;
+    cursor: pointer;
+    grid-column: span 2;
+    align-self: center; 
+    justify-self: center; 
+    border-radius: 10px;
+}
+
+#registrar:hover {
+    background: linear-gradient(to right, #6481b8, #92a1bb);
+}
+
+/* Estilos para los productos registrados */
+#productos-registrados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 0px;
+    padding: 20px 40px 10px 40px;
+    width: 100%;
+}
+
+/* Estilos para las tarjetas de productos */
+.producto-card {
+    border: 2px solid #d5b5fa; 
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    color: #0a7c80;
+    font-weight: bold;
+    height: 300px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(122, 92, 231, 0.918);
+}
+
+.producto-card img {
+    width: 130px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: rgba(224, 204, 204, 0.685);
+}
+
+/* Estilos para los botones eliminar y editar */
+.eliminar {
+    font-weight: bolder;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #be1d00, #eb4972);
+}
+
+.eliminar:hover {
+    background: linear-gradient(to right, #ec8877, #ce5a5a);
+}
+
+.editar {
+    font-weight: bolder;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #310350, #717af1);
+}
+
+.editar:hover {
+    background: linear-gradient(to right, #995ef8, #6536e6);
+}
+
+/* Estilos para el botón de guardar cambios */
+#saveChanges {
+    font-weight: bolder;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    grid-column: 2;
+    margin-right: 39%;
+    margin-left: 27%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: 1.5em;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+/* Estilos para el contador */
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contar {
+    padding: 10px 20px;
+    background-color: #001f54;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#conteo {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white;
+    font-family: 'DS-Digital', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; 
+}
+
+#sin-productos {
+    font-family: 'DS-Digital', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(1, 54, 70);
+    text-shadow: 1px 1px 4px rgba(112, 113, 145, 0.671);
+}
+
+.highlight {
+    border: 2px solid skyblue;
+    background-color: white;
+    font-size: 30px;
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(29, 134, 204, 0.699);
+    font-weight: bolder;
+}
+
+.texto-div {
+    margin-bottom: 10px;
+    color: #000000;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el modal */
+#editModal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(166, 182, 175, 0.932);
+}
+
+.modal-content {
+    background: linear-gradient(#bbb6b6, #8db0c2);
+    margin: 5% auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 20px;
+}
+
+#closeModal {
+    display: flex;
+    justify-content: end;
+    color: rgb(255, 0, 34);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: rgb(107, 21, 47);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.nombre-centrado {
+    text-align: center;
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgba(214, 208, 243, 0.719);
+    text-shadow: 2px 2px 4px rgba(207, 255, 251, 0.904); /* Sombreado */
+    -webkit-text-stroke: 1px rgb(10, 92, 168); /* Contorno */
+    -webkit-text-fill-color: rgb(124, 100, 212); /* Color de relleno */
+    margin-bottom: 6px;
+}
+
+
+.txt-marca{
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.4px rgb(25, 0, 114);
+    
+}
+
+/*MEDIAQUERIES*/
+
+
+
+
+@media only screen and (max-width: 853px) {
+
+
+    
+    #registro h2, #lista h2 {
+        font-size: 1.8em;
+        padding: 8px 15px;
+    }
+
+    form {
+   
+        display:grid;
+        grid-template-columns: 0.1fr 1fr;
+    }
+
+    #registro, #lista {
+        margin: 0 auto;
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr); 
+        margin-bottom: 10px;
+    }
+
+
+    #editModal {
+        padding: 5%; 
+    }
+
+    .modal-content {
+        width: 90%; 
+    }
+
+    #closeModal {
+        font-size: 30px; 
+    }
+    
+    #productos-registrados {
+        grid-template-columns: repeat(2, 1fr); 
+        justify-items: center; 
+        width: 80%;
+    }
+
+    #saveChanges{
+        margin-left: 18%;
+    }
+
+    #lista{
+        margin-bottom: 5px;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 667px) {
+    #productos-registrados {
+        grid-template-columns: repeat(2, 1fr); 
+        justify-items: center;
+        width: 100%;
+        
+    }
+
+    #registro, #lista {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr); 
+        margin-bottom: 10px;
+    }
+
+    #saveChanges{
+       
+        margin-left: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 599px) {
+    #registro, #lista {
+        width: 90%;
+    }
+
+    #productos-registrados {
+        grid-template-columns: 1fr;
+        justify-items: center; 
+        justify-content: center;
+    }
+
+    #editModal {
+        padding: 2%; 
+    }
+
+    .modal-content {
+        width: 100%; 
+    }
+
+    #closeModal {
+        font-size: 20px; 
+    }
+
+
+    #saveChanges{
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    #lista h2,
+    #registro h2 {
+        font-size: 24px;
+    }
+    
+
+}
+
+   
+@media (max-width: 360px){
+
+    #registro, #lista {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    #lista h2,
+    #registro h2 {
+        font-size: 15px;
+    }
+
+    #registro, #lista {
+      
+        width: 100%;
+
+    }
+    
+
+}
+    
+
