@@ -23,7 +23,7 @@ Los productos registrados se muestran en tarjetas (cards) con la opción de `eli
 - Contador de productos registrados.
 - Mensaje de "No hay productos registrados" cuando la lista está vacía.
 
-## Estructura del Proyecto
+## Estructura del Website
 
 - `index.html`: Archivo HTML principal.
 - `styles.css`: Archivo CSS para los estilos de la página.
@@ -32,7 +32,7 @@ Los productos registrados se muestran en tarjetas (cards) con la opción de `eli
 - `carpeta img`: Donde se encuentra la imagen que se muestra en caso que no se ubique la imagen  especificada.
 - `carpeta fonts`: Donde se encuentra guardado las fuentes
 
-## Comandos y Herramientas Usadas
+## Herramientas Usadas
 
 ### HTML
 - Estructuración básica del formulario, lista de productos y contador.
