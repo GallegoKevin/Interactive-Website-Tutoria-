@@ -4,7 +4,7 @@
 
 Este proyecto es una aplicación web sencilla que permite registrar productos informáticos, mostrando una lista de los productos registrados y permitiendo eliminarlos. También incluye un contador de los productos registrados.
 
-## Descripción
+## Detalle:
 
 La aplicación consta de un formulario para registrar productos informáticos con los siguientes campos:
 - Nombre
